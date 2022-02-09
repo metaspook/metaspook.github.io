@@ -168,7 +168,8 @@
             }
         }
 
-        function drawMatrix() {
+        function drawMatrix(str) {
+            str = str;
             matrx = document.createElement('div');
             matrx.id = 'matrix';
 
@@ -234,7 +235,7 @@
                 mytricks();
             }, speed);
         }
-        drawMatrix();
+        drawMatrix("Metaspook");
     </script>
 </body>
 
