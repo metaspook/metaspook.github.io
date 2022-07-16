@@ -12,7 +12,7 @@
         {
             "icons": [
                 {
-                    "src": "/numagic/favicon.ico",
+                    "src": "/favicon.ico",
                     "type": "image/x-icon",
                     "sizes": "16x16 32x32"
                 },
