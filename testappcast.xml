@@ -3,10 +3,10 @@
     <channel>
         <title>Pai2Pai Windows Updates</title>
         <item>
-            <title>Version 0.3.8</title>
+            <title>Version 2.0</title>
             <description>Minor updates and improvements.</description>
             <pubDate>Wed, 12 Nov 2025 10:00:00 +0000</pubDate>
-            <enclosure url="https://pai2pai.com/downloads/pai2pai_v0.3.8_setup.exe" sparkle:version="2.0" sparkle:os="windows" />
+            <enclosure url="https://pai2pai.com/downloads/pai2pai_v0.3.8_setup.exe" sparkle:version="2.0" />
         </item>
     </channel>
 </rss>
