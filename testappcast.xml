@@ -41,7 +41,7 @@
     <!-- A release testing maximumSystemVersion -->
     <item>
         <title>Version 5.0</title>
-        <sparkle:version>5.0</sparkle:version>
+        <sparkle:version>6.0</sparkle:version>
         <sparkle:maximumSystemVersion>2.0.0</sparkle:maximumSystemVersion>
     </item>
   </channel>
