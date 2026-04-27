@@ -1,20 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!--  
+Flutter Windows app updater XML script.
+Author : Metaspook <metaspoo@gmail.com> 2025-11-11
+Updated: at 2026-04-18 by Metaspook
+License: <http://opensource.org/licenses/MIT>
+Copyright (c) 2026 Metaspook.
+ -->
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+<channel>
+<title>Pai2Pai Windows Updates</title>
+<item>
+<title>Version 0.4.9</title>
+<!--  Following text will be shown under 'Release Notes' title in dialog  -->
+<!--  <description>Minor updates and improvements.</description>  -->
+<pubDate>Sat, 18 Apr 2026 11:40:44 +0000</pubDate>
+<enclosure url="https://pai2pai.github.io/downloads/pai2pai_v0.4.6_setup.exe" sparkle:version="0.4.9" sparkle:os="windows"/>
+</item>
+</channel>
+</rss>
+
 <!-- 
+<?xml version="1.0" encoding="UTF-8"?>
 Flutter Windows app updater XML script.
 Author : Metaspook <metaspoo@gmail.com> 2025-11-11
 Updated: at 2025-12-02 by Metaspook
 License: <http://opensource.org/licenses/MIT>
 Copyright (c) 2025 Metaspook.
--->
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
-    <channel>
-        <title>Pai2Pai Windows Updates</title>
-        <item>
-            <title>Version 0.3.16</title>
+-->
+    <!-- <channel> -->
+        <!-- <title>Pai2Pai Windows Updates</title> -->
+        <!-- <item> -->
+            <!-- <title>Version 0.3.16</title> -->
             <!-- Following text will be shown under 'Release Notes' title in dialog -->
             <!-- <description>Minor updates and improvements.</description> -->
-            <pubDate>Mon, 01 Dec 2025 07:35:12 +0000</pubDate>
+            <!-- <pubDate>Mon, 01 Dec 2025 07:35:12 +0000</pubDate>
             <enclosure url="https://pai2pai.com/downloads/pai2pai_v0.3.14_setup.exe" sparkle:version="0.3.16" sparkle:os="windows" />
         </item>
     </channel>
-</rss>
+</rss> -->
