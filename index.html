@@ -49,14 +49,11 @@
             width: 100vw;
             height: 100vh;
             z-index: -1;
-            /* Keep it behind all content */
             pointer-events: none;
-            /* Allows clicking through to links */
             opacity: 0.15;
-            /* Subtle opacity to maintain readability */
         }
 
-        /* Sticky Header Navigation (Rounded Bottom Corners + SVG Bg) */
+        /* Sticky Header Navigation */
         header {
             position: sticky;
             top: 0;
@@ -70,7 +67,6 @@
             padding: 16px 0;
             max-width: 840px;
             margin: 0 auto;
-            /* Minimalist SVG Header Background (Subtle Top-Right Orbs) */
             background-image: url("data:image/svg+xml,%3Csvg width='400' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='350' cy='-20' r='80' fill='%23A8C7FA' fill-opacity='0.05'/%3E%3Ccircle cx='280' cy='50' r='40' fill='%23A8C7FA' fill-opacity='0.03'/%3E%3C/svg%3E");
             background-position: top right;
             background-repeat: no-repeat;
@@ -91,8 +87,7 @@
             transition: color 0.2s;
         }
 
-        nav a:hover,
-        nav a:focus-visible {
+        nav a:hover, nav a:focus-visible {
             color: var(--md-sys-color-primary);
             text-decoration: none;
         }
@@ -120,7 +115,6 @@
             margin: 0 auto;
             padding: 24px 16px;
             position: relative;
-            /* Ensure it stays above canvas */
         }
 
         section {
@@ -151,9 +145,7 @@
             color: var(--md-sys-color-on-background);
         }
 
-        p {
-            margin: 0 0 16px 0;
-        }
+        p { margin: 0 0 16px 0; }
 
         .subtitle {
             font-size: 1.375rem;
@@ -168,10 +160,8 @@
         }
 
         /* Typewriter Animation CSS */
-        #typewriter-text {
-            min-height: 48px;
-        }
-
+        #typewriter-text { min-height: 48px; }
+        
         #typewriter-text::after {
             content: '|';
             color: var(--md-sys-color-primary);
@@ -179,21 +169,13 @@
         }
 
         @keyframes blink {
-
-            from,
-            to {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0;
-            }
+            from, to { opacity: 1; }
+            50% { opacity: 0; }
         }
 
         /* Material 3 Components */
         .card {
             background-color: rgba(29, 32, 36, 0.9);
-            /* Slightly transparent to show matrix */
             backdrop-filter: blur(8px);
             -webkit-backdrop-filter: blur(8px);
             border-radius: 24px;
@@ -207,38 +189,16 @@
 
         .card:hover {
             background-color: rgba(40, 42, 47, 0.95);
-            border-color: rgba(168, 199, 250, 0.1);
+            border-color: rgba(168, 199, 250, 0.1); 
         }
 
-        .card p {
-            margin-bottom: 8px;
-        }
+        .card p { margin-bottom: 8px; }
+        .card p:last-child { margin-bottom: 0; }
+        .card strong { font-weight: 500; color: var(--md-sys-color-primary); }
+        .card ul { margin-top: 0; padding-left: 20px; color: var(--md-sys-color-on-background); }
+        .card li { margin-bottom: 4px; }
 
-        .card p:last-child {
-            margin-bottom: 0;
-        }
-
-        .card strong {
-            font-weight: 500;
-            color: var(--md-sys-color-primary);
-        }
-
-        .card ul {
-            margin-top: 0;
-            padding-left: 20px;
-            color: var(--md-sys-color-on-background);
-        }
-
-        .card li {
-            margin-bottom: 4px;
-        }
-
-        .chip-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-top: 16px;
-        }
+        .chip-group { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
 
         .chip {
             background-color: var(--md-sys-color-secondary-container);
@@ -260,10 +220,7 @@
             transition: opacity 0.2s;
         }
 
-        .btn:hover {
-            opacity: 0.9;
-            text-decoration: none;
-        }
+        .btn:hover { opacity: 0.9; text-decoration: none; }
 
         .skills-grid {
             display: grid;
@@ -294,11 +251,10 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
             transition: transform 0.2s, opacity 0.2s, visibility 0.2s, background-color 0.2s;
             z-index: 1001;
-
-            /* Hidden initially */
+            
             opacity: 0;
             visibility: hidden;
             transform: scale(0.8);
@@ -313,7 +269,7 @@
         .fab:hover {
             background-color: var(--md-sys-color-primary);
             color: var(--md-sys-color-on-primary);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.4);
         }
 
         /* Footer with SVG Background */
@@ -329,7 +285,6 @@
             max-width: 840px;
             margin-left: auto;
             margin-right: auto;
-            /* Minimalist SVG Footer Background (Subtle Wave/Terrain) */
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23A8C7FA' fill-opacity='0.03' d='M0,192L48,181.3C96,171,192,149,288,154.7C384,160,480,192,576,197.3C672,203,768,181,864,165.3C960,149,1056,139,1152,144C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
             background-position: bottom;
             background-repeat: no-repeat;
@@ -338,34 +293,13 @@
         }
 
         @media (max-width: 600px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-
-            h2 {
-                font-size: 1.75rem;
-            }
-
-            .card {
-                padding: 20px;
-            }
-
-            #typewriter-text {
-                min-height: 72px;
-            }
-
-            nav {
-                gap: 16px;
-                font-size: 0.875rem;
-            }
-
-            header {
-                border-radius: 0 0 16px 16px;
-            }
-
-            .site-footer {
-                border-radius: 16px 16px 0 0;
-            }
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 1.75rem; }
+            .card { padding: 20px; }
+            #typewriter-text { min-height: 72px; }
+            nav { gap: 12px; font-size: 0.875rem; }
+            header { border-radius: 0 0 16px 16px; }
+            .site-footer { border-radius: 16px 16px 0 0; }
         }
     </style>
 </head>
@@ -380,6 +314,7 @@
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#employment">Employment</a>
+            <a href="#education">Education</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -397,7 +332,7 @@
         <section id="about">
             <h2>About Me</h2>
             <div class="card">
-                <p>I am an enthusiast with 5 years of Flutter Application development experience spanning both the tech
+                <p>I am an enthusiast with 4 years of Flutter Application development experience spanning both the tech
                     industry and teaching fields. I am dedicated to continuous research and development, constantly
                     focusing on Performance, User Experience, Stability, Resource Consumption, Security, Testability,
                     Developer Experience, Scalability, and Intellimalism.</p>
@@ -453,7 +388,7 @@
         <!-- Employment Section -->
         <section id="employment">
             <h2>Employment</h2>
-
+            
             <div class="card">
                 <h3>Sr. Flutter Developer (Team Lead)</h3>
                 <p class="meta-text"><strong>Star Soft Ltd.</strong> • Dhaka, Bangladesh • 2024–Present</p>
@@ -483,6 +418,30 @@
                 <h3>Other IT Industries</h3>
                 <p class="meta-text">Malaysia and Bangladesh • 2013–2017</p>
                 <p>Various roles across the IT sector establishing foundational technical expertise.</p>
+            </div>
+        </section>
+
+        <!-- Training & Education Section -->
+        <section id="education">
+            <h2>Trainings</h2>
+        
+            <div class="card">
+                <h3>Robotics Engineer Certification</h3>
+                <p class="meta-text"><strong>DIP Foundation</strong> • REC Batch-5 • 2026–Present</p>
+                <ul>
+                    <li><a href="https://dip-foundation.org" target="_blank" rel="noopener noreferrer">dip-foundation.org</a>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="card">
+                <h3>Flutter App Development</h3>
+                <p class="meta-text"><strong>ICT Division, Government of Bangladesh</strong> • 2021–2022</p>
+            </div>
+        
+            <div class="card">
+                <h3>Certified Ethical Hacker (CEH v10)</h3>
+                <p class="meta-text"><strong>BITM and LEADS Training & Consulting Ltd.</strong> • 2018</p>
             </div>
         </section>
 
@@ -528,7 +487,7 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-        <p>Copyright &copy; 2026 Metaspook. All rights reserved.</p>
+        <p>&copy; 2026 Al-Mehedi Hasan Ansary. Designed with Intellimalism.</p>
     </footer>
 
     <!-- Floating Action Button -->
@@ -540,7 +499,7 @@
 
     <!-- Scripts -->
     <script>
-        // Matrix Background Logic (Matching M3 Primary Color)
+                // Matrix Background Logic
         const canvas = document.getElementById('matrix-bg');
         const ctx = canvas.getContext('2d');
 
@@ -556,13 +515,11 @@
             drops[x] = 1;
         }
 
-        function drawMatrix() {
-            // Translucent black background to create fading trail
+                function drawMatrix() {
             ctx.fillStyle = 'rgba(17, 19, 24, 0.05)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-            // M3 Primary Color for the text (#A8C7FA)
-            ctx.fillStyle = '#A8C7FA';
+                ctx.fillStyle = '#A8C7FA'; 
             ctx.font = fontSize + 'px monospace';
 
             for (let i = 0; i < drops.length; i++) {
@@ -577,7 +534,6 @@
         }
         setInterval(drawMatrix, 33);
 
-        // Handle window resize for canvas
         window.addEventListener('resize', () => {
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
@@ -585,8 +541,8 @@
 
         // Looping Typewriter Logic
         const typeText = "Building high-performance, scalable applications with a focus on Intellimalism, security, and exceptional user experiences.";
-        const typeSpeed = 35;
-        const delayBetweenLoops = 4000;
+                const typeSpeed = 35;
+                const delayBetweenLoops = 4000; 
         let charIndex = 0;
         const targetElement = document.getElementById("typewriter-text");
 
@@ -618,7 +574,6 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
-        // Trigger typewriter after page load
         window.addEventListener('load', () => {
             setTimeout(typeWriter, 300);
         });
